@@ -5,6 +5,8 @@ class Stlink < Formula
     head 'https://github.com/texane/stlink.git', :revision => 'd650c9854f999d83f40d3e8c38b988b730de6368'
 
     depends_on 'pkg-config' => :build
+    depends_on 'autoconf'
+    depends_on 'automake'
     depends_on 'libusb'
 
     def install
